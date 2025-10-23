@@ -28,13 +28,13 @@ let cardHeight = 180;
 
 function preload() {
   // Card images 
-  backImg = loadImage('images/Back.png');
-  furiousImg = loadImage('images/Furious.png');
-  confusedImg = loadImage('images/Confused.png');
-  boredImg = loadImage('images/Bored.png');
-  positiveImg = loadImage('images/Positive.png');
-  xenialImg = loadImage('images/Xenial.png');
-  tiredImg = loadImage('images/Tired.png');
+  backImg = loadImage('Images/Back.png');
+  furiousImg = loadImage('Images/Furious.png');
+  confusedImg = loadImage('Images/Confused.png');
+  boredImg = loadImage('Images/Bored.png');
+  positiveImg = loadImage('Images/Positive.png');
+  xenialImg = loadImage('Images/Xenial.png');
+  tiredImg = loadImage('Images/Tired.png');
 }
 
 function setup() {
@@ -243,4 +243,5 @@ function displayWinScreen() {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+
 }
