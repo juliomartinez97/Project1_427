@@ -1,0 +1,19 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  background-color: #2a2a40;
+}
+
+canvas {
+  display: block;
+}
+
+
+* {
+  cursor: default;
+}
+

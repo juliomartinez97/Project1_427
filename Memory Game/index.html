@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    
+    canvas {
+      display: block;
+    }
+    
+    .instructions {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 300px;
+      font-size: 14px;
+      z-index: 10;
+    }
+    
+    .instructions h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    
+    .instructions p {
+      margin: 5px 0;
+      color: #666;
+    }
+    
+    .close-btn {
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    
+    .close-btn:hover {
+      background: #ff5252;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="instructions" id="instructions">
+    <h3>🎮 How to Play</h3>
+    <p><strong>Goal:</strong> Match all 6 pairs of emotion cards</p>
+    <p><strong>How:</strong></p>
+    <ul style="margin: 5px 0; padding-left: 20px;">
+      <li>Click a card to flip it over</li>
+      <li>Click a second card to find its match</li>
+      <li>If cards match, they stay face up</li>
+      <li>If they don't match, they would face down</li>
+      <li>Match all pairs to win!</li>
+    </ul>
+    <button class="close-btn" onclick="document.getElementById('instructions').style.display='none'">
+      Got it!
+    </button>
+  </div>
+  
+  <script src="sketch.js"></script>
+  
+</body>
+</html>
